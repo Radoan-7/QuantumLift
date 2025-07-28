@@ -1,6 +1,6 @@
 # 🧠⚛️ QuantumLift — Elevate Smarter with Quantum Logic
 
-![QuantumLift Banner](https://your-image-link.com/banner.jpg)
+![QuantumLift Banner](https://github.com/Radoan-7/QuantumLift/blob/main/banner)
 
 ## 🚀 Inspiration  
 This idea came from my own university experience. Our elevator often stopped at empty floors—just because someone pressed the button and left.  
