@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out 1s both;
+}
+
+/* Custom scrollbar for log panel */
+.log-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.log-panel::-webkit-scrollbar-track {
+  background: #374151;
+  border-radius: 3px;
+}
+
+.log-panel::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #6b7280, #9ca3af);
+  border-radius: 3px;
+}
+
+.log-panel::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #9ca3af, #d1d5db);
+}
+
+/* Quantum particle effects */
+@keyframes quantum-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px #3b82f6;
+  }
+  50% {
+    box-shadow: 0 0 20px #8b5cf6, 0 0 30px #ec4899;
+  }
+}
+
+.quantum-particle {
+  animation: quantum-glow 2s ease-in-out infinite;
+}
+
+/* Enhanced button hover effects */
+@keyframes neon-pulse {
+  0%, 100% {
+    box-shadow: 0 0 5px currentColor;
+  }
+  50% {
+    box-shadow: 0 0 20px currentColor, 0 0 30px currentColor;
+  }
+}
+
+.neon-button {
+  animation: neon-pulse 2s ease-in-out infinite;
+}
+
+/* Presence indicator animations */
+@keyframes presence-detected {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.presence-active {
+  animation: presence-detected 1.5s ease-in-out infinite;
+}
+
+/* Quantum state visualization */
+@keyframes quantum-state {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.quantum-bg {
+  background: linear-gradient(-45deg, #3b82f6, #8b5cf6, #ec4899, #06b6d4);
+  background-size: 400% 400%;
+  animation: quantum-state 4s ease infinite;
+}
+
+/* Enhanced elevator animations */
+@keyframes elevator-move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.elevator-moving {
+  animation: elevator-move 0.5s ease-in-out infinite;
+}
+
+/* Responsive design improvements */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .grid {
+    gap: 1rem;
+  }
+}
+
+/* Dark mode enhancements */
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+}
+
+/* Loading animation */
+@keyframes loading-dots {
+  0%, 20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+
+.loading-dots span:nth-child(1) {
+  animation: loading-dots 1.4s infinite;
+}
+
+.loading-dots span:nth-child(2) {
+  animation: loading-dots 1.4s infinite 0.2s;
+}
+
+.loading-dots span:nth-child(3) {
+  animation: loading-dots 1.4s infinite 0.4s;
+}
